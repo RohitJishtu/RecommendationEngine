@@ -1,0 +1,206 @@
+2025-03-07 12:44:36,105 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:45:43,912 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:45:43,912 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 12:45:59,768 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:45:59,769 - RecommendationSystem - INFO - Exporting analytics to analytics_dir
+2025-03-07 12:45:59,769 - StorageModule - ERROR - No latest version found
+2025-03-07 12:45:59,769 - RecommendationSystem - ERROR - Error exporting analytics: No data has been saved yet
+2025-03-07 12:46:13,890 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:46:13,890 - StorageModule - ERROR - No latest version found
+2025-03-07 12:46:13,890 - RecommendationSystem - ERROR - Error getting model stats: No data has been saved yet
+2025-03-07 12:55:56,838 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:55:56,838 - RecommendationSystem - INFO - Processing data from Data/transaction_data.csv
+2025-03-07 12:55:56,838 - DataModule - INFO - Loading data from Data/transaction_data.csv
+2025-03-07 12:55:56,845 - DataModule - INFO - Loaded 10000 transactions
+2025-03-07 12:55:56,846 - DataModule - INFO - Cleaning and preprocessing data
+2025-03-07 12:55:56,857 - DataModule - INFO - Data cleaning completed. 10000 rows remain.
+2025-03-07 12:55:56,857 - DataModule - INFO - Preparing data for recommendation system
+2025-03-07 12:55:56,857 - DataModule - INFO - Encoding categorical features
+2025-03-07 12:55:56,861 - DataModule - INFO - Encoded 1000 unique customers and 100 unique products
+2025-03-07 12:55:56,861 - DataModule - INFO - Creating customer-product interaction matrix
+2025-03-07 12:55:57,213 - DataModule - INFO - Created interaction matrix of shape (1000, 100)
+2025-03-07 12:55:57,214 - DataModule - INFO - Creating product co-occurrence matrix
+2025-03-07 12:55:57,505 - DataModule - INFO - Created co-occurrence matrix of shape (100, 100)
+2025-03-07 12:55:57,506 - DataModule - INFO - Extracting customer profiles
+2025-03-07 12:55:58,477 - DataModule - INFO - Extracted profiles for 1000 customers
+2025-03-07 12:55:58,478 - DataModule - INFO - Extracting product metadata
+2025-03-07 12:55:58,552 - DataModule - INFO - Extracted metadata for 100 products
+2025-03-07 12:55:58,552 - DataModule - INFO - Calculating seasonal relevance scores
+2025-03-07 12:55:58,552 - DataModule - INFO - Calculated seasonal relevance scores for 100 products
+2025-03-07 12:55:58,552 - DataModule - INFO - Data preparation complete
+2025-03-07 12:55:58,552 - StorageModule - INFO - Saving processed data to data_storage/version_20250307_125558
+2025-03-07 12:55:58,554 - StorageModule - INFO - Saved interaction matrix to data_storage/version_20250307_125558/interaction_matrix.npy
+2025-03-07 12:55:58,555 - StorageModule - INFO - Saved cooccurrence matrix to data_storage/version_20250307_125558/cooccurrence_matrix.npy
+2025-03-07 12:55:58,644 - StorageModule - INFO - Saved customer profiles to data_storage/version_20250307_125558/customer_profiles.json
+2025-03-07 12:55:58,646 - StorageModule - INFO - Saved product metadata to data_storage/version_20250307_125558/product_metadata.json
+2025-03-07 12:55:58,647 - StorageModule - INFO - Saved seasonal relevance scores to data_storage/version_20250307_125558/seasonal_relevance_scores.json
+2025-03-07 12:55:58,648 - StorageModule - INFO - Saved encodings to data_storage/version_20250307_125558/encodings.pickle
+2025-03-07 12:55:58,649 - StorageModule - INFO - Successfully saved all data for version 20250307_125558
+2025-03-07 12:55:58,653 - RecommendationSystem - INFO - Data processing completed for version 20250307_125558
+2025-03-07 12:56:07,757 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:56:07,757 - StorageModule - INFO - Loading data from version 20250307_125558
+2025-03-07 12:56:07,758 - StorageModule - INFO - Loaded interaction matrix from data_storage/version_20250307_125558/interaction_matrix.npy
+2025-03-07 12:56:07,758 - StorageModule - INFO - Loaded cooccurrence matrix from data_storage/version_20250307_125558/cooccurrence_matrix.npy
+2025-03-07 12:56:07,770 - StorageModule - INFO - Loaded customer profiles from data_storage/version_20250307_125558/customer_profiles.json
+2025-03-07 12:56:07,771 - StorageModule - INFO - Loaded product metadata from data_storage/version_20250307_125558/product_metadata.json
+2025-03-07 12:56:07,771 - StorageModule - INFO - Loaded seasonal relevance scores from data_storage/version_20250307_125558/seasonal_relevance_scores.json
+2025-03-07 12:56:07,771 - StorageModule - INFO - Loaded encodings from data_storage/version_20250307_125558/encodings.pickle
+2025-03-07 12:56:07,771 - StorageModule - INFO - Successfully loaded data for version 20250307_125558
+2025-03-07 12:56:07,771 - RecommendationModule - INFO - Loaded recommendation data
+2025-03-07 12:56:07,773 - RecommendationSystem - INFO - Successfully loaded model version 20250307_125558
+2025-03-07 12:56:38,766 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:56:38,766 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 12:56:45,215 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:56:45,215 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 12:57:17,280 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:57:17,280 - StorageModule - INFO - Loading data from version 20250307_125558
+2025-03-07 12:57:17,281 - StorageModule - INFO - Loaded interaction matrix from data_storage/version_20250307_125558/interaction_matrix.npy
+2025-03-07 12:57:17,281 - StorageModule - INFO - Loaded cooccurrence matrix from data_storage/version_20250307_125558/cooccurrence_matrix.npy
+2025-03-07 12:57:17,293 - StorageModule - INFO - Loaded customer profiles from data_storage/version_20250307_125558/customer_profiles.json
+2025-03-07 12:57:17,305 - StorageModule - INFO - Loaded product metadata from data_storage/version_20250307_125558/product_metadata.json
+2025-03-07 12:57:17,305 - StorageModule - INFO - Loaded seasonal relevance scores from data_storage/version_20250307_125558/seasonal_relevance_scores.json
+2025-03-07 12:57:17,306 - StorageModule - INFO - Loaded encodings from data_storage/version_20250307_125558/encodings.pickle
+2025-03-07 12:57:17,306 - StorageModule - INFO - Successfully loaded data for version 20250307_125558
+2025-03-07 12:57:17,306 - RecommendationModule - INFO - Loaded recommendation data
+2025-03-07 12:57:17,306 - RecommendationSystem - INFO - Successfully loaded model version 20250307_125558
+2025-03-07 12:57:22,510 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 12:57:22,510 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 13:01:26,373 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 13:01:26,373 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 13:01:55,326 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 13:01:55,326 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 13:02:44,102 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 13:03:42,851 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 13:04:38,325 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 13:04:51,201 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 13:04:51,201 - RecommendationSystem - INFO - Processing data from Data/transaction_data.csv
+2025-03-07 13:04:51,201 - DataModule - INFO - Loading data from Data/transaction_data.csv
+2025-03-07 13:04:51,210 - DataModule - INFO - Loaded 10000 transactions
+2025-03-07 13:04:51,210 - DataModule - INFO - Cleaning and preprocessing data
+2025-03-07 13:04:51,224 - DataModule - INFO - Data cleaning completed. 10000 rows remain.
+2025-03-07 13:04:51,224 - DataModule - INFO - Preparing data for recommendation system
+2025-03-07 13:04:51,224 - DataModule - INFO - Encoding categorical features
+2025-03-07 13:04:51,228 - DataModule - INFO - Encoded 1000 unique customers and 100 unique products
+2025-03-07 13:04:51,228 - DataModule - INFO - Creating customer-product interaction matrix
+2025-03-07 13:04:51,612 - DataModule - INFO - Created interaction matrix of shape (1000, 100)
+2025-03-07 13:04:51,613 - DataModule - INFO - Creating product co-occurrence matrix
+2025-03-07 13:04:51,903 - DataModule - INFO - Created co-occurrence matrix of shape (100, 100)
+2025-03-07 13:04:51,903 - DataModule - INFO - Extracting customer profiles
+2025-03-07 13:04:52,847 - DataModule - INFO - Extracted profiles for 1000 customers
+2025-03-07 13:04:52,847 - DataModule - INFO - Extracting product metadata
+2025-03-07 13:04:52,922 - DataModule - INFO - Extracted metadata for 100 products
+2025-03-07 13:04:52,922 - DataModule - INFO - Calculating seasonal relevance scores
+2025-03-07 13:04:52,922 - DataModule - INFO - Calculated seasonal relevance scores for 100 products
+2025-03-07 13:04:52,922 - DataModule - INFO - Data preparation complete
+2025-03-07 13:04:52,923 - StorageModule - INFO - Saving processed data to data_storage/version_20250307_130452
+2025-03-07 13:04:52,925 - StorageModule - INFO - Saved interaction matrix to data_storage/version_20250307_130452/interaction_matrix.npy
+2025-03-07 13:04:52,925 - StorageModule - INFO - Saved cooccurrence matrix to data_storage/version_20250307_130452/cooccurrence_matrix.npy
+2025-03-07 13:04:53,015 - StorageModule - INFO - Saved customer profiles to data_storage/version_20250307_130452/customer_profiles.json
+2025-03-07 13:04:53,020 - StorageModule - INFO - Saved product metadata to data_storage/version_20250307_130452/product_metadata.json
+2025-03-07 13:04:53,020 - StorageModule - INFO - Saved seasonal relevance scores to data_storage/version_20250307_130452/seasonal_relevance_scores.json
+2025-03-07 13:04:53,021 - StorageModule - INFO - Saved encodings to data_storage/version_20250307_130452/encodings.pickle
+2025-03-07 13:04:53,022 - StorageModule - INFO - Successfully saved all data for version 20250307_130452
+2025-03-07 13:04:53,027 - RecommendationSystem - INFO - Data processing completed for version 20250307_130452
+2025-03-07 13:04:58,942 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 13:04:58,943 - StorageModule - INFO - Loading data from version 20250307_130452
+2025-03-07 13:04:58,943 - StorageModule - INFO - Loaded interaction matrix from data_storage/version_20250307_130452/interaction_matrix.npy
+2025-03-07 13:04:58,944 - StorageModule - INFO - Loaded cooccurrence matrix from data_storage/version_20250307_130452/cooccurrence_matrix.npy
+2025-03-07 13:04:58,955 - StorageModule - INFO - Loaded customer profiles from data_storage/version_20250307_130452/customer_profiles.json
+2025-03-07 13:04:58,956 - StorageModule - INFO - Loaded product metadata from data_storage/version_20250307_130452/product_metadata.json
+2025-03-07 13:04:58,956 - StorageModule - INFO - Loaded seasonal relevance scores from data_storage/version_20250307_130452/seasonal_relevance_scores.json
+2025-03-07 13:04:58,956 - StorageModule - INFO - Loaded encodings from data_storage/version_20250307_130452/encodings.pickle
+2025-03-07 13:04:58,956 - StorageModule - INFO - Successfully loaded data for version 20250307_130452
+2025-03-07 13:04:58,956 - RecommendationModule - INFO - Loaded recommendation data
+2025-03-07 13:04:58,957 - RecommendationSystem - INFO - Successfully loaded model version 20250307_130452
+2025-03-07 13:05:07,521 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 13:05:07,522 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 16:11:42,756 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 16:11:42,757 - RecommendationSystem - INFO - Processing data from data/transaction_data.csv
+2025-03-07 16:11:42,757 - DataModule - INFO - Loading data from data/transaction_data.csv
+2025-03-07 16:11:42,775 - DataModule - INFO - Loaded 10000 transactions
+2025-03-07 16:11:42,776 - DataModule - INFO - Cleaning and preprocessing data
+2025-03-07 16:11:42,788 - DataModule - INFO - Data cleaning completed. 10000 rows remain.
+2025-03-07 16:11:42,788 - DataModule - INFO - Preparing data for recommendation system
+2025-03-07 16:11:42,788 - DataModule - INFO - Encoding categorical features
+2025-03-07 16:11:42,792 - DataModule - INFO - Encoded 1000 unique customers and 100 unique products
+2025-03-07 16:11:42,792 - DataModule - INFO - Creating customer-product interaction matrix
+2025-03-07 16:11:43,141 - DataModule - INFO - Created interaction matrix of shape (1000, 100)
+2025-03-07 16:11:43,142 - DataModule - INFO - Creating product co-occurrence matrix
+2025-03-07 16:11:43,436 - DataModule - INFO - Created co-occurrence matrix of shape (100, 100)
+2025-03-07 16:11:43,436 - DataModule - INFO - Extracting customer profiles
+2025-03-07 16:11:44,326 - DataModule - INFO - Extracted profiles for 1000 customers
+2025-03-07 16:11:44,326 - DataModule - INFO - Extracting product metadata
+2025-03-07 16:11:44,398 - DataModule - INFO - Extracted metadata for 100 products
+2025-03-07 16:11:44,398 - DataModule - INFO - Calculating seasonal relevance scores
+2025-03-07 16:11:44,398 - DataModule - INFO - Calculated seasonal relevance scores for 100 products
+2025-03-07 16:11:44,398 - DataModule - INFO - Data preparation complete
+2025-03-07 16:11:44,409 - StorageModule - INFO - Saving processed data to data_storage/version_20250307_161144
+2025-03-07 16:11:44,411 - StorageModule - INFO - Saved interaction matrix to data_storage/version_20250307_161144/interaction_matrix.npy
+2025-03-07 16:11:44,412 - StorageModule - INFO - Saved cooccurrence matrix to data_storage/version_20250307_161144/cooccurrence_matrix.npy
+2025-03-07 16:11:44,502 - StorageModule - INFO - Saved customer profiles to data_storage/version_20250307_161144/customer_profiles.json
+2025-03-07 16:11:44,504 - StorageModule - INFO - Saved product metadata to data_storage/version_20250307_161144/product_metadata.json
+2025-03-07 16:11:44,504 - StorageModule - INFO - Saved seasonal relevance scores to data_storage/version_20250307_161144/seasonal_relevance_scores.json
+2025-03-07 16:11:44,506 - StorageModule - INFO - Saved encodings to data_storage/version_20250307_161144/encodings.pickle
+2025-03-07 16:11:44,507 - StorageModule - INFO - Successfully saved all data for version 20250307_161144
+2025-03-07 16:11:44,512 - RecommendationSystem - INFO - Data processing completed for version 20250307_161144
+2025-03-07 16:11:51,412 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 16:11:51,412 - StorageModule - INFO - Loading data from version 20250307_161144
+2025-03-07 16:11:51,413 - StorageModule - INFO - Loaded interaction matrix from data_storage/version_20250307_161144/interaction_matrix.npy
+2025-03-07 16:11:51,413 - StorageModule - INFO - Loaded cooccurrence matrix from data_storage/version_20250307_161144/cooccurrence_matrix.npy
+2025-03-07 16:11:51,424 - StorageModule - INFO - Loaded customer profiles from data_storage/version_20250307_161144/customer_profiles.json
+2025-03-07 16:11:51,425 - StorageModule - INFO - Loaded product metadata from data_storage/version_20250307_161144/product_metadata.json
+2025-03-07 16:11:51,425 - StorageModule - INFO - Loaded seasonal relevance scores from data_storage/version_20250307_161144/seasonal_relevance_scores.json
+2025-03-07 16:11:51,426 - StorageModule - INFO - Loaded encodings from data_storage/version_20250307_161144/encodings.pickle
+2025-03-07 16:11:51,426 - StorageModule - INFO - Successfully loaded data for version 20250307_161144
+2025-03-07 16:11:51,426 - RecommendationModule - INFO - Loaded recommendation data
+2025-03-07 16:11:51,426 - RecommendationSystem - INFO - Successfully loaded model version 20250307_161144
+2025-03-07 16:11:57,779 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 16:11:57,780 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 16:36:28,664 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 16:36:28,664 - RecommendationSystem - INFO - Processing data from data/transactions.csv
+2025-03-07 16:36:28,664 - DataModule - ERROR - File not found: data/transactions.csv
+2025-03-07 16:36:28,664 - RecommendationSystem - ERROR - Error processing data: The file data/transactions.csv does not exist
+2025-03-07 16:36:40,807 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 16:36:40,807 - RecommendationSystem - INFO - Processing data from data/transaction_data.csv
+2025-03-07 16:36:40,807 - DataModule - INFO - Loading data from data/transaction_data.csv
+2025-03-07 16:36:40,814 - DataModule - INFO - Loaded 10000 transactions
+2025-03-07 16:36:40,814 - DataModule - INFO - Cleaning and preprocessing data
+2025-03-07 16:36:40,823 - DataModule - INFO - Data cleaning completed. 10000 rows remain.
+2025-03-07 16:36:40,823 - DataModule - INFO - Preparing data for recommendation system
+2025-03-07 16:36:40,823 - DataModule - INFO - Encoding categorical features
+2025-03-07 16:36:40,827 - DataModule - INFO - Encoded 1000 unique customers and 100 unique products
+2025-03-07 16:36:40,827 - DataModule - INFO - Creating customer-product interaction matrix
+2025-03-07 16:36:41,181 - DataModule - INFO - Created interaction matrix of shape (1000, 100)
+2025-03-07 16:36:41,181 - DataModule - INFO - Creating product co-occurrence matrix
+2025-03-07 16:36:41,471 - DataModule - INFO - Created co-occurrence matrix of shape (100, 100)
+2025-03-07 16:36:41,472 - DataModule - INFO - Extracting customer profiles
+2025-03-07 16:36:42,347 - DataModule - INFO - Extracted profiles for 1000 customers
+2025-03-07 16:36:42,347 - DataModule - INFO - Extracting product metadata
+2025-03-07 16:36:42,419 - DataModule - INFO - Extracted metadata for 100 products
+2025-03-07 16:36:42,420 - DataModule - INFO - Calculating seasonal relevance scores
+2025-03-07 16:36:42,420 - DataModule - INFO - Calculated seasonal relevance scores for 100 products
+2025-03-07 16:36:42,420 - DataModule - INFO - Data preparation complete
+2025-03-07 16:36:42,420 - StorageModule - INFO - Saving processed data to data_storage/version_20250307_163642
+2025-03-07 16:36:42,422 - StorageModule - INFO - Saved interaction matrix to data_storage/version_20250307_163642/interaction_matrix.npy
+2025-03-07 16:36:42,423 - StorageModule - INFO - Saved cooccurrence matrix to data_storage/version_20250307_163642/cooccurrence_matrix.npy
+2025-03-07 16:36:42,516 - StorageModule - INFO - Saved customer profiles to data_storage/version_20250307_163642/customer_profiles.json
+2025-03-07 16:36:42,519 - StorageModule - INFO - Saved product metadata to data_storage/version_20250307_163642/product_metadata.json
+2025-03-07 16:36:42,519 - StorageModule - INFO - Saved seasonal relevance scores to data_storage/version_20250307_163642/seasonal_relevance_scores.json
+2025-03-07 16:36:42,520 - StorageModule - INFO - Saved encodings to data_storage/version_20250307_163642/encodings.pickle
+2025-03-07 16:36:42,521 - StorageModule - INFO - Successfully saved all data for version 20250307_163642
+2025-03-07 16:36:42,526 - RecommendationSystem - INFO - Data processing completed for version 20250307_163642
+2025-03-07 16:37:05,554 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 16:37:05,554 - StorageModule - INFO - Loading data from version 20250307_163642
+2025-03-07 16:37:05,555 - StorageModule - INFO - Loaded interaction matrix from data_storage/version_20250307_163642/interaction_matrix.npy
+2025-03-07 16:37:05,556 - StorageModule - INFO - Loaded cooccurrence matrix from data_storage/version_20250307_163642/cooccurrence_matrix.npy
+2025-03-07 16:37:05,567 - StorageModule - INFO - Loaded customer profiles from data_storage/version_20250307_163642/customer_profiles.json
+2025-03-07 16:37:05,568 - StorageModule - INFO - Loaded product metadata from data_storage/version_20250307_163642/product_metadata.json
+2025-03-07 16:37:05,568 - StorageModule - INFO - Loaded seasonal relevance scores from data_storage/version_20250307_163642/seasonal_relevance_scores.json
+2025-03-07 16:37:05,569 - StorageModule - INFO - Loaded encodings from data_storage/version_20250307_163642/encodings.pickle
+2025-03-07 16:37:05,569 - StorageModule - INFO - Successfully loaded data for version 20250307_163642
+2025-03-07 16:37:05,569 - RecommendationModule - INFO - Loaded recommendation data
+2025-03-07 16:37:05,569 - RecommendationSystem - INFO - Successfully loaded model version 20250307_163642
+2025-03-07 16:37:30,479 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 16:37:30,479 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded
+2025-03-07 16:40:38,605 - RecommendationSystem - INFO - Recommendation System initialized
+2025-03-07 16:40:38,605 - RecommendationSystem - ERROR - Error generating recommendations: No recommendation data loaded

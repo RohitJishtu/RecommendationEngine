@@ -1,0 +1,15 @@
+{
+  "version": "20250307_125558",
+  "created_at": "2025-03-07T12:55:58.648619",
+  "data_contents": [
+    "interaction_matrix",
+    "cooccurrence_matrix",
+    "customer_profiles",
+    "product_metadata",
+    "seasonal_relevance_scores",
+    "customer_encodings",
+    "product_encodings",
+    "reverse_customer_encodings",
+    "reverse_product_encodings"
+  ]
+}

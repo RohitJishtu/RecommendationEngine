@@ -1,0 +1,2102 @@
+{
+  "P100": {
+    "product_id": "P100",
+    "purchase_count": 102,
+    "unique_customers": 96,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 63.4906862745098,
+    "min_price": 30.03,
+    "max_price": 97.42,
+    "first_purchased": "2025-01-01T05:11:53",
+    "last_purchased": "2025-03-30T07:09:32",
+    "monthly_distribution": {
+      "1": 40,
+      "3": 33,
+      "2": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P089": {
+    "product_id": "P089",
+    "purchase_count": 89,
+    "unique_customers": 86,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 499.348988764045,
+    "min_price": 400.29,
+    "max_price": 593.17,
+    "first_purchased": "2025-01-02T00:56:42",
+    "last_purchased": "2025-03-30T23:42:18",
+    "monthly_distribution": {
+      "3": 37,
+      "2": 28,
+      "1": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P095": {
+    "product_id": "P095",
+    "purchase_count": 112,
+    "unique_customers": 110,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 30.985892857142858,
+    "min_price": 11.1,
+    "max_price": 50.0,
+    "first_purchased": "2025-01-02T02:18:29",
+    "last_purchased": "2025-03-28T21:27:24",
+    "monthly_distribution": {
+      "3": 41,
+      "2": 37,
+      "1": 34
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P054": {
+    "product_id": "P054",
+    "purchase_count": 92,
+    "unique_customers": 88,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 128.57695652173913,
+    "min_price": 50.76,
+    "max_price": 198.36,
+    "first_purchased": "2025-01-01T08:32:46",
+    "last_purchased": "2025-03-30T23:45:33",
+    "monthly_distribution": {
+      "2": 33,
+      "1": 32,
+      "3": 27
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P080": {
+    "product_id": "P080",
+    "purchase_count": 104,
+    "unique_customers": 100,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 62.01576923076924,
+    "min_price": 30.22,
+    "max_price": 99.55,
+    "first_purchased": "2025-01-02T19:18:59",
+    "last_purchased": "2025-03-29T23:54:02",
+    "monthly_distribution": {
+      "1": 37,
+      "2": 34,
+      "3": 33
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P037": {
+    "product_id": "P037",
+    "purchase_count": 106,
+    "unique_customers": 101,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.70594339622642,
+    "min_price": 10.66,
+    "max_price": 48.32,
+    "first_purchased": "2025-01-02T20:19:16",
+    "last_purchased": "2025-03-30T07:17:23",
+    "monthly_distribution": {
+      "3": 40,
+      "2": 39,
+      "1": 27
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P030": {
+    "product_id": "P030",
+    "purchase_count": 106,
+    "unique_customers": 100,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.37877358490566,
+    "min_price": 5.2,
+    "max_price": 19.91,
+    "first_purchased": "2025-01-01T04:32:42",
+    "last_purchased": "2025-03-30T20:13:39",
+    "monthly_distribution": {
+      "1": 45,
+      "3": 34,
+      "2": 27
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P035": {
+    "product_id": "P035",
+    "purchase_count": 110,
+    "unique_customers": 103,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.927181818181822,
+    "min_price": 10.16,
+    "max_price": 49.65,
+    "first_purchased": "2025-01-01T17:46:08",
+    "last_purchased": "2025-03-30T19:13:46",
+    "monthly_distribution": {
+      "3": 42,
+      "2": 42,
+      "1": 26
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P027": {
+    "product_id": "P027",
+    "purchase_count": 95,
+    "unique_customers": 89,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.338736842105261,
+    "min_price": 5.34,
+    "max_price": 19.96,
+    "first_purchased": "2025-01-01T07:00:40",
+    "last_purchased": "2025-03-30T17:15:22",
+    "monthly_distribution": {
+      "3": 33,
+      "2": 31,
+      "1": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P007": {
+    "product_id": "P007",
+    "purchase_count": 94,
+    "unique_customers": 86,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 62.70829787234042,
+    "min_price": 31.42,
+    "max_price": 99.87,
+    "first_purchased": "2025-01-04T12:54:03",
+    "last_purchased": "2025-03-30T20:44:11",
+    "monthly_distribution": {
+      "2": 34,
+      "1": 30,
+      "3": 30
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P023": {
+    "product_id": "P023",
+    "purchase_count": 105,
+    "unique_customers": 97,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 67.828,
+    "min_price": 30.3,
+    "max_price": 99.9,
+    "first_purchased": "2025-01-03T05:15:36",
+    "last_purchased": "2025-03-30T19:34:31",
+    "monthly_distribution": {
+      "3": 40,
+      "1": 33,
+      "2": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P036": {
+    "product_id": "P036",
+    "purchase_count": 107,
+    "unique_customers": 98,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 13.01700934579439,
+    "min_price": 5.1,
+    "max_price": 19.98,
+    "first_purchased": "2025-01-03T15:15:53",
+    "last_purchased": "2025-03-30T08:10:17",
+    "monthly_distribution": {
+      "2": 38,
+      "1": 37,
+      "3": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P048": {
+    "product_id": "P048",
+    "purchase_count": 115,
+    "unique_customers": 110,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 120.65617391304347,
+    "min_price": 50.2,
+    "max_price": 196.28,
+    "first_purchased": "2025-01-02T03:53:17",
+    "last_purchased": "2025-03-29T18:00:54",
+    "monthly_distribution": {
+      "2": 40,
+      "3": 38,
+      "1": 37
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P029": {
+    "product_id": "P029",
+    "purchase_count": 98,
+    "unique_customers": 96,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 123.0484693877551,
+    "min_price": 50.35,
+    "max_price": 195.11,
+    "first_purchased": "2025-01-01T06:05:26",
+    "last_purchased": "2025-03-30T19:04:28",
+    "monthly_distribution": {
+      "2": 37,
+      "3": 32,
+      "1": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P043": {
+    "product_id": "P043",
+    "purchase_count": 99,
+    "unique_customers": 94,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 123.57676767676769,
+    "min_price": 50.26,
+    "max_price": 199.29,
+    "first_purchased": "2025-01-01T22:25:38",
+    "last_purchased": "2025-03-30T02:35:33",
+    "monthly_distribution": {
+      "3": 35,
+      "2": 32,
+      "1": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P026": {
+    "product_id": "P026",
+    "purchase_count": 115,
+    "unique_customers": 110,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 32.489043478260875,
+    "min_price": 10.31,
+    "max_price": 49.79,
+    "first_purchased": "2025-01-01T22:58:05",
+    "last_purchased": "2025-03-30T23:45:16",
+    "monthly_distribution": {
+      "1": 41,
+      "3": 40,
+      "2": 34
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P064": {
+    "product_id": "P064",
+    "purchase_count": 98,
+    "unique_customers": 86,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 507.90153061224487,
+    "min_price": 403.48,
+    "max_price": 598.86,
+    "first_purchased": "2025-01-01T01:26:30",
+    "last_purchased": "2025-03-30T16:59:29",
+    "monthly_distribution": {
+      "3": 38,
+      "1": 34,
+      "2": 26
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P063": {
+    "product_id": "P063",
+    "purchase_count": 103,
+    "unique_customers": 100,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 68.96067961165048,
+    "min_price": 30.44,
+    "max_price": 99.84,
+    "first_purchased": "2025-01-01T01:50:02",
+    "last_purchased": "2025-03-30T03:50:55",
+    "monthly_distribution": {
+      "3": 35,
+      "1": 35,
+      "2": 33
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P067": {
+    "product_id": "P067",
+    "purchase_count": 108,
+    "unique_customers": 107,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 11.61462962962963,
+    "min_price": 5.13,
+    "max_price": 19.67,
+    "first_purchased": "2025-01-02T20:50:44",
+    "last_purchased": "2025-03-30T02:07:21",
+    "monthly_distribution": {
+      "2": 43,
+      "1": 33,
+      "3": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P049": {
+    "product_id": "P049",
+    "purchase_count": 93,
+    "unique_customers": 84,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 129.4037634408602,
+    "min_price": 54.23,
+    "max_price": 199.01,
+    "first_purchased": "2025-01-01T07:58:05",
+    "last_purchased": "2025-03-30T11:06:22",
+    "monthly_distribution": {
+      "3": 40,
+      "1": 31,
+      "2": 22
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P040": {
+    "product_id": "P040",
+    "purchase_count": 99,
+    "unique_customers": 96,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 118.35919191919191,
+    "min_price": 50.19,
+    "max_price": 199.45,
+    "first_purchased": "2025-01-01T18:53:27",
+    "last_purchased": "2025-03-29T19:31:28",
+    "monthly_distribution": {
+      "1": 41,
+      "2": 34,
+      "3": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P025": {
+    "product_id": "P025",
+    "purchase_count": 83,
+    "unique_customers": 81,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 499.4587951807229,
+    "min_price": 401.32,
+    "max_price": 590.11,
+    "first_purchased": "2025-01-03T19:35:26",
+    "last_purchased": "2025-03-29T06:36:44",
+    "monthly_distribution": {
+      "3": 37,
+      "1": 27,
+      "2": 19
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P072": {
+    "product_id": "P072",
+    "purchase_count": 101,
+    "unique_customers": 94,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.00207920792079,
+    "min_price": 5.0,
+    "max_price": 19.7,
+    "first_purchased": "2025-01-01T05:23:10",
+    "last_purchased": "2025-03-26T20:04:13",
+    "monthly_distribution": {
+      "1": 37,
+      "2": 33,
+      "3": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P074": {
+    "product_id": "P074",
+    "purchase_count": 78,
+    "unique_customers": 77,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.452692307692303,
+    "min_price": 10.4,
+    "max_price": 49.95,
+    "first_purchased": "2025-01-01T00:38:15",
+    "last_purchased": "2025-03-30T16:39:03",
+    "monthly_distribution": {
+      "3": 29,
+      "2": 26,
+      "1": 23
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P022": {
+    "product_id": "P022",
+    "purchase_count": 100,
+    "unique_customers": 96,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 66.2714,
+    "min_price": 30.55,
+    "max_price": 99.09,
+    "first_purchased": "2025-01-01T03:00:31",
+    "last_purchased": "2025-03-30T23:16:58",
+    "monthly_distribution": {
+      "1": 37,
+      "3": 34,
+      "2": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P069": {
+    "product_id": "P069",
+    "purchase_count": 101,
+    "unique_customers": 96,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 13.183168316831685,
+    "min_price": 5.43,
+    "max_price": 19.89,
+    "first_purchased": "2025-01-01T13:04:14",
+    "last_purchased": "2025-03-30T15:03:03",
+    "monthly_distribution": {
+      "3": 37,
+      "1": 33,
+      "2": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P009": {
+    "product_id": "P009",
+    "purchase_count": 109,
+    "unique_customers": 101,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 125.43091743119267,
+    "min_price": 50.89,
+    "max_price": 199.89,
+    "first_purchased": "2025-01-01T05:36:34",
+    "last_purchased": "2025-03-30T17:46:52",
+    "monthly_distribution": {
+      "3": 39,
+      "2": 38,
+      "1": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P068": {
+    "product_id": "P068",
+    "purchase_count": 100,
+    "unique_customers": 95,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 127.27470000000001,
+    "min_price": 51.96,
+    "max_price": 196.34,
+    "first_purchased": "2025-01-03T07:06:39",
+    "last_purchased": "2025-03-30T20:48:43",
+    "monthly_distribution": {
+      "1": 42,
+      "3": 39,
+      "2": 19
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P041": {
+    "product_id": "P041",
+    "purchase_count": 90,
+    "unique_customers": 86,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 67.0108888888889,
+    "min_price": 30.4,
+    "max_price": 98.7,
+    "first_purchased": "2025-01-01T07:04:10",
+    "last_purchased": "2025-03-30T23:11:06",
+    "monthly_distribution": {
+      "2": 38,
+      "1": 29,
+      "3": 23
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P065": {
+    "product_id": "P065",
+    "purchase_count": 105,
+    "unique_customers": 99,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.554095238095236,
+    "min_price": 5.19,
+    "max_price": 19.99,
+    "first_purchased": "2025-01-01T20:31:41",
+    "last_purchased": "2025-03-30T20:57:13",
+    "monthly_distribution": {
+      "1": 40,
+      "3": 35,
+      "2": 30
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P099": {
+    "product_id": "P099",
+    "purchase_count": 95,
+    "unique_customers": 93,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 511.0347368421053,
+    "min_price": 401.57,
+    "max_price": 597.98,
+    "first_purchased": "2025-01-03T09:26:08",
+    "last_purchased": "2025-03-30T07:45:57",
+    "monthly_distribution": {
+      "3": 38,
+      "2": 31,
+      "1": 26
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P050": {
+    "product_id": "P050",
+    "purchase_count": 96,
+    "unique_customers": 96,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 126.46645833333334,
+    "min_price": 51.89,
+    "max_price": 198.32,
+    "first_purchased": "2025-01-01T22:51:15",
+    "last_purchased": "2025-03-30T06:51:16",
+    "monthly_distribution": {
+      "1": 42,
+      "3": 30,
+      "2": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P078": {
+    "product_id": "P078",
+    "purchase_count": 93,
+    "unique_customers": 86,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 496.7043010752689,
+    "min_price": 404.32,
+    "max_price": 598.52,
+    "first_purchased": "2025-01-03T06:46:58",
+    "last_purchased": "2025-03-30T14:30:26",
+    "monthly_distribution": {
+      "1": 33,
+      "2": 32,
+      "3": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P088": {
+    "product_id": "P088",
+    "purchase_count": 94,
+    "unique_customers": 91,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.34340425531915,
+    "min_price": 5.0,
+    "max_price": 19.67,
+    "first_purchased": "2025-01-01T08:21:38",
+    "last_purchased": "2025-03-30T19:51:40",
+    "monthly_distribution": {
+      "3": 37,
+      "1": 33,
+      "2": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P087": {
+    "product_id": "P087",
+    "purchase_count": 95,
+    "unique_customers": 89,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.826526315789472,
+    "min_price": 10.25,
+    "max_price": 49.79,
+    "first_purchased": "2025-01-01T08:56:10",
+    "last_purchased": "2025-03-30T21:11:08",
+    "monthly_distribution": {
+      "1": 36,
+      "2": 33,
+      "3": 26
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P084": {
+    "product_id": "P084",
+    "purchase_count": 80,
+    "unique_customers": 79,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 119.305625,
+    "min_price": 52.84,
+    "max_price": 199.2,
+    "first_purchased": "2025-01-01T12:31:29",
+    "last_purchased": "2025-03-30T06:09:28",
+    "monthly_distribution": {
+      "2": 32,
+      "3": 24,
+      "1": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P006": {
+    "product_id": "P006",
+    "purchase_count": 104,
+    "unique_customers": 100,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 63.545,
+    "min_price": 31.06,
+    "max_price": 99.21,
+    "first_purchased": "2025-01-01T03:40:21",
+    "last_purchased": "2025-03-30T07:23:00",
+    "monthly_distribution": {
+      "3": 43,
+      "1": 33,
+      "2": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P097": {
+    "product_id": "P097",
+    "purchase_count": 97,
+    "unique_customers": 93,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 499.42865979381446,
+    "min_price": 400.64,
+    "max_price": 599.23,
+    "first_purchased": "2025-01-02T03:28:50",
+    "last_purchased": "2025-03-30T02:09:48",
+    "monthly_distribution": {
+      "2": 38,
+      "1": 31,
+      "3": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P082": {
+    "product_id": "P082",
+    "purchase_count": 104,
+    "unique_customers": 99,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.31971153846154,
+    "min_price": 10.82,
+    "max_price": 48.94,
+    "first_purchased": "2025-01-02T05:46:24",
+    "last_purchased": "2025-03-30T15:57:57",
+    "monthly_distribution": {
+      "1": 41,
+      "3": 40,
+      "2": 23
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P042": {
+    "product_id": "P042",
+    "purchase_count": 107,
+    "unique_customers": 102,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 124.89598130841121,
+    "min_price": 53.21,
+    "max_price": 195.98,
+    "first_purchased": "2025-01-01T00:53:36",
+    "last_purchased": "2025-03-30T20:53:31",
+    "monthly_distribution": {
+      "3": 40,
+      "2": 36,
+      "1": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P053": {
+    "product_id": "P053",
+    "purchase_count": 116,
+    "unique_customers": 110,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 124.34241379310345,
+    "min_price": 50.48,
+    "max_price": 198.54,
+    "first_purchased": "2025-01-02T11:12:16",
+    "last_purchased": "2025-03-30T16:49:16",
+    "monthly_distribution": {
+      "1": 48,
+      "3": 43,
+      "2": 25
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P044": {
+    "product_id": "P044",
+    "purchase_count": 104,
+    "unique_customers": 100,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.346442307692307,
+    "min_price": 10.18,
+    "max_price": 49.72,
+    "first_purchased": "2025-01-03T11:16:31",
+    "last_purchased": "2025-03-29T19:52:44",
+    "monthly_distribution": {
+      "2": 37,
+      "1": 35,
+      "3": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P008": {
+    "product_id": "P008",
+    "purchase_count": 95,
+    "unique_customers": 91,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 486.9641052631579,
+    "min_price": 400.34,
+    "max_price": 592.82,
+    "first_purchased": "2025-01-01T16:43:33",
+    "last_purchased": "2025-03-30T20:49:25",
+    "monthly_distribution": {
+      "3": 34,
+      "1": 33,
+      "2": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P005": {
+    "product_id": "P005",
+    "purchase_count": 98,
+    "unique_customers": 91,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 30.69683673469388,
+    "min_price": 10.56,
+    "max_price": 49.66,
+    "first_purchased": "2025-01-01T00:37:48",
+    "last_purchased": "2025-03-30T05:58:49",
+    "monthly_distribution": {
+      "2": 39,
+      "3": 30,
+      "1": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P058": {
+    "product_id": "P058",
+    "purchase_count": 104,
+    "unique_customers": 101,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 510.16519230769234,
+    "min_price": 403.25,
+    "max_price": 599.74,
+    "first_purchased": "2025-01-01T20:14:55",
+    "last_purchased": "2025-03-30T09:46:57",
+    "monthly_distribution": {
+      "1": 41,
+      "3": 34,
+      "2": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P013": {
+    "product_id": "P013",
+    "purchase_count": 97,
+    "unique_customers": 90,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.546597938144334,
+    "min_price": 10.19,
+    "max_price": 49.91,
+    "first_purchased": "2025-01-01T05:08:04",
+    "last_purchased": "2025-03-29T10:01:14",
+    "monthly_distribution": {
+      "3": 40,
+      "2": 35,
+      "1": 22
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P045": {
+    "product_id": "P045",
+    "purchase_count": 104,
+    "unique_customers": 99,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 28.259999999999998,
+    "min_price": 10.09,
+    "max_price": 49.37,
+    "first_purchased": "2025-01-02T21:19:11",
+    "last_purchased": "2025-03-30T19:46:03",
+    "monthly_distribution": {
+      "3": 39,
+      "2": 35,
+      "1": 30
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P060": {
+    "product_id": "P060",
+    "purchase_count": 91,
+    "unique_customers": 87,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.113516483516484,
+    "min_price": 5.09,
+    "max_price": 19.81,
+    "first_purchased": "2025-01-02T02:05:03",
+    "last_purchased": "2025-03-30T18:27:03",
+    "monthly_distribution": {
+      "2": 32,
+      "3": 31,
+      "1": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P055": {
+    "product_id": "P055",
+    "purchase_count": 99,
+    "unique_customers": 98,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 491.6151515151515,
+    "min_price": 403.04,
+    "max_price": 599.08,
+    "first_purchased": "2025-01-01T12:40:58",
+    "last_purchased": "2025-03-30T21:57:28",
+    "monthly_distribution": {
+      "3": 37,
+      "2": 33,
+      "1": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P046": {
+    "product_id": "P046",
+    "purchase_count": 96,
+    "unique_customers": 92,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 125.49416666666666,
+    "min_price": 50.77,
+    "max_price": 199.23,
+    "first_purchased": "2025-01-04T09:25:15",
+    "last_purchased": "2025-03-30T04:05:20",
+    "monthly_distribution": {
+      "3": 43,
+      "2": 30,
+      "1": 23
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P085": {
+    "product_id": "P085",
+    "purchase_count": 102,
+    "unique_customers": 99,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 63.124607843137255,
+    "min_price": 31.01,
+    "max_price": 99.82,
+    "first_purchased": "2025-01-02T21:13:54",
+    "last_purchased": "2025-03-29T20:05:18",
+    "monthly_distribution": {
+      "3": 36,
+      "2": 34,
+      "1": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P091": {
+    "product_id": "P091",
+    "purchase_count": 113,
+    "unique_customers": 110,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 67.21008849557522,
+    "min_price": 30.35,
+    "max_price": 99.33,
+    "first_purchased": "2025-01-01T11:12:25",
+    "last_purchased": "2025-03-29T07:25:45",
+    "monthly_distribution": {
+      "3": 40,
+      "2": 37,
+      "1": 36
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P004": {
+    "product_id": "P004",
+    "purchase_count": 106,
+    "unique_customers": 103,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 65.25990566037736,
+    "min_price": 30.73,
+    "max_price": 99.94,
+    "first_purchased": "2025-01-01T09:16:45",
+    "last_purchased": "2025-03-30T11:22:14",
+    "monthly_distribution": {
+      "1": 44,
+      "2": 32,
+      "3": 30
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P086": {
+    "product_id": "P086",
+    "purchase_count": 90,
+    "unique_customers": 88,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.814777777777778,
+    "min_price": 10.63,
+    "max_price": 49.67,
+    "first_purchased": "2025-01-01T01:40:23",
+    "last_purchased": "2025-03-25T23:32:17",
+    "monthly_distribution": {
+      "1": 34,
+      "3": 32,
+      "2": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P016": {
+    "product_id": "P016",
+    "purchase_count": 84,
+    "unique_customers": 79,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 28.372023809523803,
+    "min_price": 10.35,
+    "max_price": 49.78,
+    "first_purchased": "2025-01-01T15:34:09",
+    "last_purchased": "2025-03-30T09:26:04",
+    "monthly_distribution": {
+      "1": 31,
+      "2": 29,
+      "3": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P033": {
+    "product_id": "P033",
+    "purchase_count": 121,
+    "unique_customers": 116,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.78190082644628,
+    "min_price": 5.1,
+    "max_price": 19.78,
+    "first_purchased": "2025-01-02T09:49:56",
+    "last_purchased": "2025-03-30T18:24:40",
+    "monthly_distribution": {
+      "1": 44,
+      "3": 40,
+      "2": 37
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P077": {
+    "product_id": "P077",
+    "purchase_count": 109,
+    "unique_customers": 105,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 64.92256880733945,
+    "min_price": 30.76,
+    "max_price": 98.7,
+    "first_purchased": "2025-01-01T14:02:03",
+    "last_purchased": "2025-03-30T17:04:13",
+    "monthly_distribution": {
+      "3": 45,
+      "1": 35,
+      "2": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P017": {
+    "product_id": "P017",
+    "purchase_count": 94,
+    "unique_customers": 88,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 28.865106382978716,
+    "min_price": 10.14,
+    "max_price": 49.82,
+    "first_purchased": "2025-01-01T01:35:38",
+    "last_purchased": "2025-03-28T23:51:28",
+    "monthly_distribution": {
+      "2": 33,
+      "3": 33,
+      "1": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P014": {
+    "product_id": "P014",
+    "purchase_count": 102,
+    "unique_customers": 98,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 65.63264705882352,
+    "min_price": 30.63,
+    "max_price": 99.09,
+    "first_purchased": "2025-01-02T03:16:57",
+    "last_purchased": "2025-03-30T16:57:37",
+    "monthly_distribution": {
+      "1": 36,
+      "3": 35,
+      "2": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P002": {
+    "product_id": "P002",
+    "purchase_count": 97,
+    "unique_customers": 93,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 30.960721649484533,
+    "min_price": 10.19,
+    "max_price": 49.84,
+    "first_purchased": "2025-01-01T05:47:29",
+    "last_purchased": "2025-03-30T02:45:27",
+    "monthly_distribution": {
+      "3": 36,
+      "1": 35,
+      "2": 26
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P020": {
+    "product_id": "P020",
+    "purchase_count": 95,
+    "unique_customers": 90,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 120.60505263157894,
+    "min_price": 50.12,
+    "max_price": 199.01,
+    "first_purchased": "2025-01-02T00:49:03",
+    "last_purchased": "2025-03-29T14:34:32",
+    "monthly_distribution": {
+      "2": 35,
+      "1": 35,
+      "3": 25
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P059": {
+    "product_id": "P059",
+    "purchase_count": 97,
+    "unique_customers": 89,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 489.8055670103092,
+    "min_price": 400.76,
+    "max_price": 598.34,
+    "first_purchased": "2025-01-01T15:12:08",
+    "last_purchased": "2025-03-29T00:32:30",
+    "monthly_distribution": {
+      "2": 39,
+      "3": 38,
+      "1": 20
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P062": {
+    "product_id": "P062",
+    "purchase_count": 95,
+    "unique_customers": 89,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 124.0721052631579,
+    "min_price": 51.47,
+    "max_price": 198.2,
+    "first_purchased": "2025-01-01T03:36:07",
+    "last_purchased": "2025-03-30T19:36:06",
+    "monthly_distribution": {
+      "1": 37,
+      "3": 34,
+      "2": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P061": {
+    "product_id": "P061",
+    "purchase_count": 92,
+    "unique_customers": 87,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.798260869565215,
+    "min_price": 5.14,
+    "max_price": 19.99,
+    "first_purchased": "2025-01-01T03:19:30",
+    "last_purchased": "2025-03-30T17:38:40",
+    "monthly_distribution": {
+      "3": 32,
+      "2": 32,
+      "1": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P094": {
+    "product_id": "P094",
+    "purchase_count": 99,
+    "unique_customers": 95,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 30.48242424242424,
+    "min_price": 10.07,
+    "max_price": 49.98,
+    "first_purchased": "2025-01-01T04:45:42",
+    "last_purchased": "2025-03-30T05:39:34",
+    "monthly_distribution": {
+      "1": 37,
+      "3": 35,
+      "2": 27
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P098": {
+    "product_id": "P098",
+    "purchase_count": 94,
+    "unique_customers": 90,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 118.23606382978724,
+    "min_price": 50.09,
+    "max_price": 199.55,
+    "first_purchased": "2025-01-03T11:44:42",
+    "last_purchased": "2025-03-30T09:46:00",
+    "monthly_distribution": {
+      "2": 37,
+      "3": 35,
+      "1": 22
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P081": {
+    "product_id": "P081",
+    "purchase_count": 90,
+    "unique_customers": 86,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.734222222222222,
+    "min_price": 10.62,
+    "max_price": 48.51,
+    "first_purchased": "2025-01-01T07:11:37",
+    "last_purchased": "2025-03-30T18:29:36",
+    "monthly_distribution": {
+      "3": 35,
+      "2": 29,
+      "1": 26
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P039": {
+    "product_id": "P039",
+    "purchase_count": 106,
+    "unique_customers": 106,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.644528301886792,
+    "min_price": 5.09,
+    "max_price": 19.92,
+    "first_purchased": "2025-01-02T15:18:16",
+    "last_purchased": "2025-03-30T19:06:43",
+    "monthly_distribution": {
+      "2": 45,
+      "1": 33,
+      "3": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P032": {
+    "product_id": "P032",
+    "purchase_count": 104,
+    "unique_customers": 97,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.196442307692308,
+    "min_price": 5.03,
+    "max_price": 19.94,
+    "first_purchased": "2025-01-01T04:03:30",
+    "last_purchased": "2025-03-30T14:24:27",
+    "monthly_distribution": {
+      "1": 39,
+      "3": 36,
+      "2": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P051": {
+    "product_id": "P051",
+    "purchase_count": 109,
+    "unique_customers": 102,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 129.75899082568807,
+    "min_price": 51.37,
+    "max_price": 198.35,
+    "first_purchased": "2025-01-01T02:00:01",
+    "last_purchased": "2025-03-30T05:53:06",
+    "monthly_distribution": {
+      "1": 38,
+      "2": 37,
+      "3": 34
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P011": {
+    "product_id": "P011",
+    "purchase_count": 102,
+    "unique_customers": 94,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 61.9971568627451,
+    "min_price": 30.29,
+    "max_price": 98.26,
+    "first_purchased": "2025-01-02T05:57:39",
+    "last_purchased": "2025-03-29T21:52:37",
+    "monthly_distribution": {
+      "2": 37,
+      "3": 35,
+      "1": 30
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P056": {
+    "product_id": "P056",
+    "purchase_count": 95,
+    "unique_customers": 91,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.605368421052633,
+    "min_price": 5.0,
+    "max_price": 19.98,
+    "first_purchased": "2025-01-01T16:05:33",
+    "last_purchased": "2025-03-30T12:01:02",
+    "monthly_distribution": {
+      "2": 34,
+      "1": 34,
+      "3": 27
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P057": {
+    "product_id": "P057",
+    "purchase_count": 100,
+    "unique_customers": 96,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 28.520799999999994,
+    "min_price": 10.61,
+    "max_price": 48.9,
+    "first_purchased": "2025-01-01T21:49:22",
+    "last_purchased": "2025-03-29T15:22:41",
+    "monthly_distribution": {
+      "1": 38,
+      "2": 33,
+      "3": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P024": {
+    "product_id": "P024",
+    "purchase_count": 83,
+    "unique_customers": 79,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.594939759036146,
+    "min_price": 5.36,
+    "max_price": 19.6,
+    "first_purchased": "2025-01-01T16:41:09",
+    "last_purchased": "2025-03-30T09:51:10",
+    "monthly_distribution": {
+      "2": 30,
+      "3": 30,
+      "1": 23
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P047": {
+    "product_id": "P047",
+    "purchase_count": 91,
+    "unique_customers": 89,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 125.53296703296704,
+    "min_price": 51.47,
+    "max_price": 197.98,
+    "first_purchased": "2025-01-01T00:47:57",
+    "last_purchased": "2025-03-30T22:20:24",
+    "monthly_distribution": {
+      "1": 35,
+      "3": 32,
+      "2": 24
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P018": {
+    "product_id": "P018",
+    "purchase_count": 100,
+    "unique_customers": 94,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.5271,
+    "min_price": 11.03,
+    "max_price": 49.63,
+    "first_purchased": "2025-01-02T19:08:20",
+    "last_purchased": "2025-03-30T20:19:38",
+    "monthly_distribution": {
+      "3": 36,
+      "1": 33,
+      "2": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P092": {
+    "product_id": "P092",
+    "purchase_count": 104,
+    "unique_customers": 100,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 124.37788461538463,
+    "min_price": 50.13,
+    "max_price": 199.91,
+    "first_purchased": "2025-01-01T00:49:45",
+    "last_purchased": "2025-03-28T01:46:35",
+    "monthly_distribution": {
+      "1": 39,
+      "2": 34,
+      "3": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P079": {
+    "product_id": "P079",
+    "purchase_count": 105,
+    "unique_customers": 98,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.931904761904761,
+    "min_price": 5.14,
+    "max_price": 19.87,
+    "first_purchased": "2025-01-02T05:29:50",
+    "last_purchased": "2025-03-29T08:22:41",
+    "monthly_distribution": {
+      "1": 36,
+      "3": 35,
+      "2": 34
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P071": {
+    "product_id": "P071",
+    "purchase_count": 110,
+    "unique_customers": 107,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 31.917818181818188,
+    "min_price": 10.46,
+    "max_price": 49.88,
+    "first_purchased": "2025-01-01T17:08:21",
+    "last_purchased": "2025-03-30T02:26:55",
+    "monthly_distribution": {
+      "1": 39,
+      "2": 38,
+      "3": 33
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P019": {
+    "product_id": "P019",
+    "purchase_count": 104,
+    "unique_customers": 97,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.122692307692304,
+    "min_price": 10.16,
+    "max_price": 49.76,
+    "first_purchased": "2025-01-02T00:59:57",
+    "last_purchased": "2025-03-28T14:02:51",
+    "monthly_distribution": {
+      "1": 37,
+      "2": 34,
+      "3": 33
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P021": {
+    "product_id": "P021",
+    "purchase_count": 101,
+    "unique_customers": 99,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.823069306930693,
+    "min_price": 5.01,
+    "max_price": 19.49,
+    "first_purchased": "2025-01-01T13:19:23",
+    "last_purchased": "2025-03-29T18:22:55",
+    "monthly_distribution": {
+      "3": 35,
+      "2": 34,
+      "1": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P001": {
+    "product_id": "P001",
+    "purchase_count": 110,
+    "unique_customers": 106,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 66.11281818181818,
+    "min_price": 30.25,
+    "max_price": 99.73,
+    "first_purchased": "2025-01-02T20:09:35",
+    "last_purchased": "2025-03-28T05:20:01",
+    "monthly_distribution": {
+      "3": 44,
+      "2": 37,
+      "1": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P052": {
+    "product_id": "P052",
+    "purchase_count": 93,
+    "unique_customers": 89,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 31.170322580645166,
+    "min_price": 10.07,
+    "max_price": 49.93,
+    "first_purchased": "2025-01-01T05:07:07",
+    "last_purchased": "2025-03-29T19:08:40",
+    "monthly_distribution": {
+      "3": 34,
+      "2": 32,
+      "1": 27
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P038": {
+    "product_id": "P038",
+    "purchase_count": 103,
+    "unique_customers": 99,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 28.78766990291262,
+    "min_price": 10.15,
+    "max_price": 49.5,
+    "first_purchased": "2025-01-01T17:08:05",
+    "last_purchased": "2025-03-28T08:38:58",
+    "monthly_distribution": {
+      "1": 38,
+      "3": 36,
+      "2": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P076": {
+    "product_id": "P076",
+    "purchase_count": 100,
+    "unique_customers": 97,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 486.5351,
+    "min_price": 400.86,
+    "max_price": 597.33,
+    "first_purchased": "2025-01-01T17:41:04",
+    "last_purchased": "2025-03-30T19:31:52",
+    "monthly_distribution": {
+      "3": 36,
+      "2": 36,
+      "1": 28
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P034": {
+    "product_id": "P034",
+    "purchase_count": 106,
+    "unique_customers": 100,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 65.35981132075473,
+    "min_price": 30.05,
+    "max_price": 99.61,
+    "first_purchased": "2025-01-02T06:39:22",
+    "last_purchased": "2025-03-26T15:52:51",
+    "monthly_distribution": {
+      "1": 42,
+      "3": 33,
+      "2": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P070": {
+    "product_id": "P070",
+    "purchase_count": 102,
+    "unique_customers": 99,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 497.88156862745103,
+    "min_price": 401.08,
+    "max_price": 596.23,
+    "first_purchased": "2025-01-01T15:41:15",
+    "last_purchased": "2025-03-30T14:06:16",
+    "monthly_distribution": {
+      "1": 38,
+      "3": 34,
+      "2": 30
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P010": {
+    "product_id": "P010",
+    "purchase_count": 99,
+    "unique_customers": 96,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 65.43808080808081,
+    "min_price": 31.0,
+    "max_price": 98.86,
+    "first_purchased": "2025-01-01T18:50:45",
+    "last_purchased": "2025-03-30T10:32:20",
+    "monthly_distribution": {
+      "1": 44,
+      "2": 30,
+      "3": 25
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P012": {
+    "product_id": "P012",
+    "purchase_count": 110,
+    "unique_customers": 107,
+    "categories": [
+      "Home"
+    ],
+    "primary_category": "Home",
+    "avg_price": 122.89154545454545,
+    "min_price": 50.79,
+    "max_price": 199.63,
+    "first_purchased": "2025-01-01T17:05:10",
+    "last_purchased": "2025-03-30T19:43:11",
+    "monthly_distribution": {
+      "3": 41,
+      "2": 39,
+      "1": 30
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P003": {
+    "product_id": "P003",
+    "purchase_count": 110,
+    "unique_customers": 103,
+    "categories": [
+      "Accessories"
+    ],
+    "primary_category": "Accessories",
+    "avg_price": 29.385818181818184,
+    "min_price": 10.04,
+    "max_price": 49.49,
+    "first_purchased": "2025-01-02T00:50:42",
+    "last_purchased": "2025-03-29T20:32:05",
+    "monthly_distribution": {
+      "1": 42,
+      "3": 37,
+      "2": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P093": {
+    "product_id": "P093",
+    "purchase_count": 104,
+    "unique_customers": 99,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 63.482788461538455,
+    "min_price": 30.13,
+    "max_price": 99.5,
+    "first_purchased": "2025-01-05T03:02:23",
+    "last_purchased": "2025-03-30T18:33:28",
+    "monthly_distribution": {
+      "2": 38,
+      "3": 36,
+      "1": 30
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P073": {
+    "product_id": "P073",
+    "purchase_count": 80,
+    "unique_customers": 79,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 63.086875000000006,
+    "min_price": 36.17,
+    "max_price": 99.5,
+    "first_purchased": "2025-01-01T23:28:32",
+    "last_purchased": "2025-03-30T10:46:02",
+    "monthly_distribution": {
+      "1": 32,
+      "2": 28,
+      "3": 20
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P066": {
+    "product_id": "P066",
+    "purchase_count": 88,
+    "unique_customers": 80,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 500.0025,
+    "min_price": 401.54,
+    "max_price": 598.2,
+    "first_purchased": "2025-01-02T06:37:51",
+    "last_purchased": "2025-03-29T23:17:49",
+    "monthly_distribution": {
+      "2": 37,
+      "1": 26,
+      "3": 25
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P015": {
+    "product_id": "P015",
+    "purchase_count": 98,
+    "unique_customers": 89,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 63.19948979591837,
+    "min_price": 30.05,
+    "max_price": 99.47,
+    "first_purchased": "2025-01-04T01:37:02",
+    "last_purchased": "2025-03-30T05:19:04",
+    "monthly_distribution": {
+      "2": 36,
+      "3": 31,
+      "1": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  },
+  "P031": {
+    "product_id": "P031",
+    "purchase_count": 111,
+    "unique_customers": 105,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 65.69225225225225,
+    "min_price": 31.47,
+    "max_price": 99.84,
+    "first_purchased": "2025-01-01T02:59:17",
+    "last_purchased": "2025-03-30T06:17:05",
+    "monthly_distribution": {
+      "1": 47,
+      "3": 33,
+      "2": 31
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P075": {
+    "product_id": "P075",
+    "purchase_count": 102,
+    "unique_customers": 102,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.475196078431372,
+    "min_price": 5.15,
+    "max_price": 19.82,
+    "first_purchased": "2025-01-01T03:27:37",
+    "last_purchased": "2025-03-30T03:46:33",
+    "monthly_distribution": {
+      "3": 41,
+      "1": 34,
+      "2": 27
+    },
+    "is_seasonal": true,
+    "peak_month": 3
+  },
+  "P083": {
+    "product_id": "P083",
+    "purchase_count": 102,
+    "unique_customers": 95,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 65.70196078431373,
+    "min_price": 30.12,
+    "max_price": 99.71,
+    "first_purchased": "2025-01-01T01:53:09",
+    "last_purchased": "2025-03-28T16:42:59",
+    "monthly_distribution": {
+      "1": 36,
+      "2": 34,
+      "3": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P028": {
+    "product_id": "P028",
+    "purchase_count": 95,
+    "unique_customers": 90,
+    "categories": [
+      "Clothing"
+    ],
+    "primary_category": "Clothing",
+    "avg_price": 66.46073684210525,
+    "min_price": 33.19,
+    "max_price": 99.25,
+    "first_purchased": "2025-01-01T21:14:19",
+    "last_purchased": "2025-03-30T11:41:56",
+    "monthly_distribution": {
+      "1": 37,
+      "3": 32,
+      "2": 26
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P096": {
+    "product_id": "P096",
+    "purchase_count": 111,
+    "unique_customers": 106,
+    "categories": [
+      "Electronics"
+    ],
+    "primary_category": "Electronics",
+    "avg_price": 504.2023423423424,
+    "min_price": 400.19,
+    "max_price": 598.89,
+    "first_purchased": "2025-01-01T02:58:46",
+    "last_purchased": "2025-03-28T21:13:17",
+    "monthly_distribution": {
+      "1": 40,
+      "2": 39,
+      "3": 32
+    },
+    "is_seasonal": true,
+    "peak_month": 1
+  },
+  "P090": {
+    "product_id": "P090",
+    "purchase_count": 96,
+    "unique_customers": 92,
+    "categories": [
+      "Food"
+    ],
+    "primary_category": "Food",
+    "avg_price": 12.084791666666666,
+    "min_price": 5.0,
+    "max_price": 19.87,
+    "first_purchased": "2025-01-01T10:57:09",
+    "last_purchased": "2025-03-29T18:17:31",
+    "monthly_distribution": {
+      "2": 34,
+      "3": 33,
+      "1": 29
+    },
+    "is_seasonal": true,
+    "peak_month": 2
+  }
+}
