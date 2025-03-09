@@ -1,494 +1,206 @@
+#!/usr/bin/env python3
 import os
 import logging
 import argparse
-import pandas as pd
+import sys
+from pathlib import Path
+import traceback
 from datetime import datetime
 
-from Data.DataMain import *
-from Data.DataStorage import *
-from MLModule.Model1 import *
+# Import your modules
+from Data.DataMain import DataModule
+from Data.DataStorage import StorageModule
+from MLModule.Model1 import RecommendationModule
 
-class RecommendationSystem:
-    """
-    Main module that orchestrates the entire recommendation system workflow.
-    Implements a strategy pattern to coordinate data processing, storage, and recommendation generation.
-    """
+class PipelineManager:
+    """Manager class to handle the recommendation pipeline process"""
     
-    def __init__(self, data_dir="data", storage_dir="data_storage", log_level=logging.INFO):
-        """
-        Initialize the recommendation system
+    def __init__(self, input_file, storage_dir, log_level=logging.INFO, customer_id=None):
+        """Initialize the pipeline manager with configuration"""
+        self.input_file = input_file
+        self.storage_dir = storage_dir
+        self.customer_id = customer_id
+        self.setup_logging(log_level)
+        self.create_directories()
         
-        Parameters:
-        -----------
-        data_dir : str, optional
-            Directory where raw data files are stored (default: "data")
-        storage_dir : str, optional
-            Directory where processed data will be stored (default: "data_storage")
-        log_level : int, optional
-            Logging level (default: logging.INFO)
-        """
-        # Create directories if they don't exist
-        os.makedirs(data_dir, exist_ok=True)
+    def setup_logging(self, log_level):
+        """Set up logging with appropriate format and level"""
+        log_dir = Path("logs")
+        log_dir.mkdir(exist_ok=True)
         
-        # Setup logging
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        log_file = log_dir / f"pipeline_{timestamp}.log"
+        
+        # Configure logging
         logging.basicConfig(
             level=log_level,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler("recommendation_system.log"),
-                logging.StreamHandler()
+                logging.FileHandler(log_file),
+                logging.StreamHandler(sys.stdout)
             ]
         )
-        self.logger = logging.getLogger('RecommendationSystem')
+        self.logger = logging.getLogger("pipeline")
+        self.logger.info(f"Logging initialized at level {log_level}")
         
-        # Initialize modules
-        self.data_module = DataModule()
-        self.storage_module = StorageModule(storage_dir=storage_dir)
-        self.recommendation_module = RecommendationModule()
-        
-        # Store configurations
-        self.data_dir = data_dir
-        self.storage_dir = storage_dir
-        
-        self.logger.info("Recommendation System initialized")
-    
-    def process_data(self, file_path, encoding='utf-8', save_version=None):
-        """
-        Process new transaction data
-        
-        Parameters:
-        -----------
-        file_path : str
-            Path to the CSV file containing transaction data
-        encoding : str, optional
-            Character encoding to use when reading the file (default: 'utf-8')
-        save_version : str, optional
-            Version identifier for saving the processed data (default: timestamp)
+    def create_directories(self):
+        """Ensure all necessary directories exist"""
+        for directory in ["data", self.storage_dir]:
+            path = Path(directory)
+            path.mkdir(exist_ok=True)
+            self.logger.debug(f"Ensured directory exists: {path}")
             
-        Returns:
-        --------
-        dict
-            Summary of the processed data
-        """
-        self.logger.info(f"Processing data from {file_path}")
-        
+    def process_data(self):
+        """Step 1: Process input data"""
+        self.logger.info("Step 1: Processing data")
         try:
-            # Load and process data
-            self.data_module.load_csv(file_path, encoding=encoding)
+            self.data_module = DataModule()
+            self.data_module.load_csv(self.input_file)
+            self.logger.info(f"Loaded data from {self.input_file}")
+            
             self.data_module.clean_data()
-            recommendation_data = self.data_module.prepare_data_for_recommendations()
+            self.logger.info("Data cleaned successfully")
             
-            # Save processed data
-            if save_version is None:
-                save_version = datetime.now().strftime("%Y%m%d_%H%M%S")
-                
-            self.storage_module.save_processed_data(recommendation_data, version=save_version)
-            
-            # Get data summary
-            summary = self.data_module.get_data_summary()
-            self.logger.info(f"Data processing completed for version {save_version}")
-            
-            return {
-                'version': save_version,
-                'summary': summary,
-                'status': 'success'
-            }
-            
+            self.recommendation_data = self.data_module.prepare_data_for_recommendations()
+            self.logger.info("Data prepared for recommendations")
+            return True
         except Exception as e:
             self.logger.error(f"Error processing data: {str(e)}")
-            return {
-                'status': 'error',
-                'error': str(e)
-            }
-    
-    def load_model(self, version=None):
-        """
-        Load processed data for making recommendations
-        
-        Parameters:
-        -----------
-        version : str, optional
-            Version identifier to load (default: latest version)
-            
-        Returns:
-        --------
-        bool
-            True if loading was successful
-        """
-        try:
-            # Load data from storage
-            recommendation_data = self.storage_module.load_processed_data(version=version)
-            
-            # Initialize recommendation module with loaded data
-            self.recommendation_module.load_data(recommendation_data)
-            
-            version_info = self.storage_module.get_version_info(version)
-            self.logger.info(f"Successfully loaded model version {version_info.get('version', 'unknown')}")
-            
-            return True
-            
-        except Exception as e:
-            self.logger.error(f"Error loading model: {str(e)}")
+            self.logger.error(traceback.format_exc())
             return False
-    
-    def get_recommendations(self, customer_id=None, product_id=None, n=5, method='hybrid'):
-        """
-        Generate recommendations based on customer ID or product ID
-        
-        Parameters:
-        -----------
-        customer_id : str, optional
-            ID of the customer to generate recommendations for
-        product_id : str, optional
-            ID of the product to find similar items for
-        n : int, optional
-            Number of recommendations to generate (default: 5)
-        method : str, optional
-            Recommendation method to use (default: 'hybrid')
             
-        Returns:
-        --------
-        dict
-            Dictionary containing recommendations
-        """
+    def save_processed_data(self):
+        """Step 2: Save processed data"""
+        self.logger.info("Step 2: Saving processed data")
         try:
-            if customer_id is not None:
-                # Generate customer-based recommendations
-                recommendations = self.recommendation_module.recommend_for_customer(
-                    customer_id=customer_id, 
-                    n=n, 
-                    include_purchased=False
-                )
-                
-                return {
-                    'customer_id': customer_id,
-                    'recommendations': recommendations,
-                    'type': 'customer_based',
-                    'status': 'success'
-                }
-                
-            elif product_id is not None:
-                # Generate product-based recommendations
-                recommendations = self.recommendation_module.get_similar_products(
-                    product_id=product_id, 
-                    n=n, 
-                    method=method
-                )
-                
-                return {
-                    'product_id': product_id,
-                    'recommendations': recommendations,
-                    'type': 'product_based',
-                    'method': method,
-                    'status': 'success'
-                }
-                
+            self.storage_module = StorageModule(storage_dir=self.storage_dir)
+            self.version = self.storage_module.save_processed_data(self.recommendation_data)
+            self.logger.info(f"Data saved as version: {self.version}")
+            return True
+        except Exception as e:
+            self.logger.error(f"Error saving data: {str(e)}")
+            self.logger.error(traceback.format_exc())
+            return False
+            
+    def load_processed_data(self):
+        """Step 3: Load processed data"""
+        self.logger.info("Step 3: Loading processed data")
+        try:
+            self.loaded_data = self.storage_module.load_processed_data()
+            self.logger.info(f"Data loaded successfully with keys: {list(self.loaded_data.keys())}")
+            return True
+        except Exception as e:
+            self.logger.error(f"Error loading data: {str(e)}")
+            self.logger.error(traceback.format_exc())
+            return False
+            
+    def initialize_recommendation_module(self):
+        """Step 4: Initialize recommendation module"""
+        self.logger.info("Step 4: Initializing recommendation module")
+        try:
+            self.recommendation_module = RecommendationModule()
+            self.logger.info("Recommendation module initialized")
+            return True
+        except Exception as e:
+            self.logger.error(f"Error initializing recommendation module: {str(e)}")
+            self.logger.error(traceback.format_exc())
+            return False
+            
+    def load_data_into_recommendation_module(self):
+        """Step 5: Load data into recommendation module"""
+        self.logger.info("Step 5: Loading data into recommendation module")
+        try:
+            self.recommendation_module.load_data(self.loaded_data)
+            self.logger.info("Data loaded into recommendation module")
+            return True
+        except Exception as e:
+            self.logger.error(f"Error loading data into recommendation module: {str(e)}")
+            self.logger.error(traceback.format_exc())
+            return False
+            
+    def get_recommendations(self, customer_id=None):
+        """Step 6: Generate recommendations for a customer"""
+        customer = customer_id or self.customer_id
+        if not customer:
+            self.logger.warning("No customer ID provided for recommendations")
+            return None
+            
+        self.logger.info(f"Step 6: Getting recommendations for customer {customer}")
+        try:
+            recommendations = self.recommendation_module.recommend_for_customer(customer)
+            self.logger.info(f"Generated {len(recommendations)} recommendations")
+            return recommendations
+        except Exception as e:
+            self.logger.error(f"Error getting recommendations: {str(e)}")
+            self.logger.error(traceback.format_exc())
+            return None
+            
+    def run_pipeline(self):
+        """Execute the full pipeline"""
+        self.logger.info("Starting recommendation pipeline")
+        
+        # Run all steps sequentially, stopping if any step fails
+        if not self.process_data():
+            self.logger.error("Pipeline failed at data processing step")
+            return False
+            
+        if not self.save_processed_data():
+            self.logger.error("Pipeline failed at data saving step")
+            return False
+            
+        if not self.load_processed_data():
+            self.logger.error("Pipeline failed at data loading step")
+            return False
+            
+        if not self.initialize_recommendation_module():
+            self.logger.error("Pipeline failed at recommendation module initialization")
+            return False
+            
+        if not self.load_data_into_recommendation_module():
+            self.logger.error("Pipeline failed at loading data into recommendation module")
+            return False
+            
+        if self.customer_id:
+            recommendations = self.get_recommendations()
+            if recommendations:
+                self.logger.info(f"Recommendations for {self.customer_id}: {recommendations}")
             else:
-                return {
-                    'status': 'error',
-                    'error': 'Either customer_id or product_id must be provided'
-                }
-                
-        except Exception as e:
-            self.logger.error(f"Error generating recommendations: {str(e)}")
-            return {
-                'status': 'error',
-                'error': str(e)
-            }
-    
-    def export_analytics(self, output_dir="analytics"):
-        """
-        Export analytics data for reporting and visualization
-        
-        Parameters:
-        -----------
-        output_dir : str, optional
-            Directory where analytics files will be saved (default: "analytics")
+                self.logger.warning("Failed to generate recommendations")
+        else:
+            self.logger.info("No customer ID provided, skipping recommendation generation")
             
-        Returns:
-        --------
-        dict
-            Dictionary containing paths to exported files
-        """
-        os.makedirs(output_dir, exist_ok=True)
-        self.logger.info(f"Exporting analytics to {output_dir}")
-        
-        try:
-            # Export customer data
-            customer_path = os.path.join(output_dir, "customer_analysis.csv")
-            self.storage_module.export_customer_data(customer_path)
-            
-            # Export product data
-            product_path = os.path.join(output_dir, "product_analysis.csv")
-            self.storage_module.export_product_data(product_path)
-            
-            # Generate additional analytics files
-            version_info = self.storage_module.get_version_info()
-            versions_list = self.storage_module.list_available_versions()
-            
-            # Save model version info
-            version_path = os.path.join(output_dir, "model_versions.csv")
-            pd.DataFrame({
-                'version': versions_list,
-                'current': [v == version_info.get('version', '') for v in versions_list]
-            }).to_csv(version_path, index=False)
-            
-            return {
-                'customer_analysis': customer_path,
-                'product_analysis': product_path,
-                'model_versions': version_path,
-                'status': 'success'
-            }
-            
-        except Exception as e:
-            self.logger.error(f"Error exporting analytics: {str(e)}")
-            return {
-                'status': 'error',
-                'error': str(e)
-            }
-    
-    def run_batch_recommendations(self, batch_file, output_file):
-        """
-        Generate recommendations for a batch of customers or products
-        
-        Parameters:
-        -----------
-        batch_file : str
-            Path to CSV file containing IDs to generate recommendations for
-            (should have either 'customer_id' or 'product_id' column)
-        output_file : str
-            Path where recommendations will be saved
-            
-        Returns:
-        --------
-        dict
-            Summary of batch processing
-        """
-        self.logger.info(f"Running batch recommendations from {batch_file}")
-        
-        try:
-            # Load batch file
-            batch_df = pd.read_csv(batch_file)
-            
-            # Determine batch type
-            is_customer_batch = 'customer_id' in batch_df.columns
-            is_product_batch = 'product_id' in batch_df.columns
-            
-            if not (is_customer_batch or is_product_batch):
-                raise ValueError("Batch file must contain either 'customer_id' or 'product_id' column")
-            
-            # Initialize results
-            recommendations = []
-            processed_count = 0
-            error_count = 0
-            
-            # Process each item
-            if is_customer_batch:
-                for customer_id in batch_df['customer_id'].unique():
-                    try:
-                        result = self.get_recommendations(customer_id=customer_id)
-                        
-                        if result['status'] == 'success':
-                            # Add recommendations for this customer
-                            for rank, product_id in enumerate(result['recommendations'], 1):
-                                recommendations.append({
-                                    'customer_id': customer_id,
-                                    'product_id': product_id,
-                                    'rank': rank,
-                                    'recommendation_type': 'customer_based'
-                                })
-                            processed_count += 1
-                        else:
-                            error_count += 1
-                            
-                    except Exception as e:
-                        self.logger.error(f"Error processing customer {customer_id}: {str(e)}")
-                        error_count += 1
-            
-            elif is_product_batch:
-                for product_id in batch_df['product_id'].unique():
-                    try:
-                        result = self.get_recommendations(product_id=product_id)
-                        
-                        if result['status'] == 'success':
-                            # Add recommendations for this product
-                            for rank, similar_id in enumerate(result['recommendations'], 1):
-                                recommendations.append({
-                                    'product_id': product_id,
-                                    'similar_product_id': similar_id,
-                                    'rank': rank,
-                                    'recommendation_type': 'product_based'
-                                })
-                            processed_count += 1
-                        else:
-                            error_count += 1
-                            
-                    except Exception as e:
-                        self.logger.error(f"Error processing product {product_id}: {str(e)}")
-                        error_count += 1
-            
-            # Save results
-            recommendations_df = pd.DataFrame(recommendations)
-            recommendations_df.to_csv(output_file, index=False)
-            
-            return {
-                'total_items': len(batch_df),
-                'processed_count': processed_count,
-                'error_count': error_count,
-                'output_file': output_file,
-                'status': 'success'
-            }
-            
-        except Exception as e:
-            self.logger.error(f"Error in batch processing: {str(e)}")
-            return {
-                'status': 'error',
-                'error': str(e)
-            }
-    
-    def get_model_stats(self):
-        """
-        Get statistics about the current model
-        
-        Returns:
-        --------
-        dict
-            Dictionary containing model statistics
-        """
-        try:
-            # Get version info
-            version_info = self.storage_module.get_version_info()
-            
-            # Get available versions
-            versions = self.storage_module.list_available_versions()
-            
-            # Get data summary if available
-            data_summary = None
-            if hasattr(self.data_module, 'get_data_summary'):
-                try:
-                    data_summary = self.data_module.get_data_summary()
-                except:
-                    pass
-            
-            return {
-                'current_version': version_info.get('version'),
-                'created_at': version_info.get('created_at'),
-                'available_versions': versions,
-                'data_summary': data_summary,
-                'status': 'success'
-            }
-            
-        except Exception as e:
-            self.logger.error(f"Error getting model stats: {str(e)}")
-            return {
-                'status': 'error',
-                'error': str(e)
-            }
+        self.logger.info("Pipeline completed successfully")
+        return True
+
 
 def main():
-    """
-    Main function to run the recommendation system from command line
-    """
-    parser = argparse.ArgumentParser(description="Product Recommendation System")
-    subparsers = parser.add_subparsers(dest="command", help="Command to run")
+    """Main entry point with argument parsing"""
+    parser = argparse.ArgumentParser(description="Recommendation Pipeline")
+    parser.add_argument("--input", "-i", default="data/transaction_data.csv", 
+                        help="Input CSV file path")
+    parser.add_argument("--storage", "-s", default="data_storage", 
+                        help="Storage directory for processed data")
+    parser.add_argument("--customer", "-c", 
+                        help="Customer ID for recommendations")
+    parser.add_argument("--verbose", "-v", action="store_true", 
+                        help="Enable verbose logging")
     
-    # Process data command
-    process_parser = subparsers.add_parser("process", help="Process transaction data")
-    process_parser.add_argument("--file", required=True, help="Path to transaction data CSV file")
-    process_parser.add_argument("--encoding", default="utf-8", help="File encoding")
-    process_parser.add_argument("--version", help="Version identifier for the processed data")
-    
-    # Load model command
-    load_parser = subparsers.add_parser("load", help="Load a model version")
-    load_parser.add_argument("--version", help="Version to load (default: latest)")
-    
-    # Get recommendations command
-    recommend_parser = subparsers.add_parser("recommend", help="Generate recommendations")
-    recommend_parser.add_argument("--customer", help="Customer ID to generate recommendations for")
-    recommend_parser.add_argument("--product", help="Product ID to find similar items for")
-    recommend_parser.add_argument("--count", type=int, default=5, help="Number of recommendations")
-    recommend_parser.add_argument("--method", default="hybrid", choices=["cooccurrence", "content", "hybrid"], 
-                                 help="Recommendation method")
-    
-    # Export analytics command
-    export_parser = subparsers.add_parser("export", help="Export analytics data")
-    export_parser.add_argument("--output", default="analytics", help="Output directory")
-    
-    # Batch recommendations command
-    batch_parser = subparsers.add_parser("batch", help="Generate recommendations for a batch of items")
-    batch_parser.add_argument("--input", required=True, help="Input batch CSV file")
-    batch_parser.add_argument("--output", required=True, help="Output recommendations CSV file")
-    
-    # Model stats command
-    stats_parser = subparsers.add_parser("stats", help="Show model statistics")
-    
-    # Parse arguments
     args = parser.parse_args()
     
-    # Initialize recommendation system
-    system = RecommendationSystem()
+    # Set log level based on verbosity
+    log_level = logging.DEBUG if args.verbose else logging.INFO
     
-    # Execute command
-    if args.command == "process":
-        result = system.process_data(args.file, encoding=args.encoding, save_version=args.version)
-        print(f"Data processing {'successful' if result['status'] == 'success' else 'failed'}")
-        if result['status'] == 'success':
-            print(f"Version: {result['version']}")
-            print("Summary:")
-            for key, value in result['summary'].items():
-                print(f"  {key}: {value}")
+    # Initialize and run pipeline
+    pipeline = PipelineManager(
+        input_file=args.input,
+        storage_dir=args.storage,
+        log_level=log_level,
+        customer_id=args.customer
+    )
     
-    elif args.command == "load":
-        success = system.load_model(version=args.version)
-        print(f"Model loading {'successful' if success else 'failed'}")
-    
-    elif args.command == "recommend":
-        if args.customer:
-            result = system.get_recommendations(customer_id=args.customer, n=args.count)
-            if result['status'] == 'success':
-                print(f"Recommendations for customer {args.customer}:")
-                for i, product_id in enumerate(result['recommendations'], 1):
-                    print(f"  {i}. {product_id}")
-        elif args.product:
-            result = system.get_recommendations(product_id=args.product, n=args.count, method=args.method)
-            if result['status'] == 'success':
-                print(f"Similar products to {args.product}:")
-                for i, product_id in enumerate(result['recommendations'], 1):
-                    print(f"  {i}. {product_id}")
-        else:
-            print("Error: Either --customer or --product must be specified")
-    
-    elif args.command == "export":
-        result = system.export_analytics(output_dir=args.output)
-        if result['status'] == 'success':
-            print(f"Analytics exported to {args.output}")
-            for key, path in result.items():
-                if key != 'status':
-                    print(f"  {key}: {path}")
-    
-    elif args.command == "batch":
-        result = system.run_batch_recommendations(args.input, args.output)
-        if result['status'] == 'success':
-            print(f"Batch processing completed:")
-            print(f"  Total items: {result['total_items']}")
-            print(f"  Processed: {result['processed_count']}")
-            print(f"  Errors: {result['error_count']}")
-            print(f"  Results saved to: {result['output_file']}")
-    
-    elif args.command == "stats":
-        result = system.get_model_stats()
-        if result['status'] == 'success':
-            print("Model Statistics:")
-            print(f"  Current version: {result['current_version']}")
-            print(f"  Created at: {result['created_at']}")
-            print(f"  Available versions: {', '.join(result['available_versions'])}")
-            if result['data_summary']:
-                print("  Data Summary:")
-                for key, value in result['data_summary'].items():
-                    print(f"    {key}: {value}")
-    
-    else:
-        parser.print_help()
+    success = pipeline.run_pipeline()
+    return 0 if success else 1
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
